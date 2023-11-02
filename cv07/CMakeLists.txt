@@ -3,7 +3,7 @@
 #
 
 # Add source to this project's executable.
-add_executable (cv07 "cv07.cpp" "cv07.h")
+add_executable (cv07 "cv07.cpp" "Body2D.h" "Body2D.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET cv07 PROPERTY CXX_STANDARD 20)
