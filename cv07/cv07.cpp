@@ -29,7 +29,7 @@ int main()
 	
 	for (int j = 0; j < 10; j++)
 	{
-		for (size_t k = 0; k < 10; k++)
+		for (int k = 0; k < 10; k++)
 		{
 			printf("%.2lf \t", vysledna[j][k]);
 		}
