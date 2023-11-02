@@ -33,6 +33,7 @@ int indexNejblizsi(int velikost, int(*poleBodu)[2], int referencniX, int referen
 	return vysledek[0];
 
 }
+
 double prumernaVzdalenost(int velikost, int(*poleBodu)[2], int referencniX, int referencniY)
 {
 	double vysledek = 0;
@@ -46,4 +47,15 @@ double prumernaVzdalenost(int velikost, int(*poleBodu)[2], int referencniX, int 
 	vysledek = vzdalenost / velikost;
 	
 	return vysledek;
+}
+
+void vzajemneVzdalenosti(int velikost, int(*poleBodu)[2], double vysledna[10][10])
+{
+	for (int i = 0; i < velikost; i++)
+	{
+		for (int j = 0; j < velikost; j++)
+		{
+			vysledna[i][j] = sqrt(pow((poleBodu[i][0] - poleBodu[j][0]), 2) + pow((poleBodu[i][0] - poleBodu[j][1]), 2));
+		}
+	}
 }
